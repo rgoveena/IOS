@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="W3I-pn-N6e">
+            <objects>
+                <viewController title="First" id="CZ4-MO-1fc" customClass="MyworldFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6AO-oV-NaQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="G8p-NJ-lHf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="myWorld2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eMd-A6-JBY">
+                                <rect key="frame" x="29" y="465" width="262" height="52"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBa-z8-qTD">
+                                <rect key="frame" x="0.0" y="20" width="320" height="372"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </webView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kj-yd-97U">
+                                <rect key="frame" x="64" y="382" width="193" height="122"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CZ4-MO-1fc" id="z15-KY-220"/>
+                                    <outlet property="delegate" destination="CZ4-MO-1fc" id="6LH-nr-WuX"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40431121734626085" green="1" blue="0.6682150783315719" alpha="0.75" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MyLinks" image="first" id="u1e-5L-l1D"/>
+                    <connections>
+                        <outlet property="pickerView" destination="6kj-yd-97U" id="DmY-R3-SRz"/>
+                        <outlet property="webviewLink" destination="ZBa-z8-qTD" id="0Z2-Zz-Idl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1873" y="-2763"/>
+        </scene>
+        <!--MyComms-->
+        <scene sceneID="isY-KQ-wyJ">
+            <objects>
+                <viewController id="sHc-so-liS" customClass="MyworldThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ph6-Qh-ka6"/>
+                        <viewControllerLayoutGuide type="bottom" id="5eT-oj-LTz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w4L-be-xHc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-m0-KPw">
+                                <rect key="frame" x="39" y="437" width="69" height="55"/>
+                                <state key="normal" image="sms-blue.png">
+                                    <color key="titleColor" red="0.43096781103748638" green="0.37408212326989232" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="sHc-so-liS" eventType="touchUpInside" id="U6O-Uj-QNQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bd-44-uVE">
+                                <rect key="frame" x="124" y="423" width="83" height="88"/>
+                                <state key="normal" image="Email2014.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showEmail:" destination="sHc-so-liS" eventType="touchUpInside" id="IgQ-0g-sZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLq-Qi-DYv">
+                                <rect key="frame" x="226" y="440" width="61" height="50"/>
+                                <state key="normal" image="call2014.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onCall:" destination="sHc-so-liS" eventType="touchUpInside" id="xj4-K9-7f2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wMyWorld2014.png" translatesAutoresizingMaskIntoConstraints="NO" id="WFD-ry-bUV">
+                                <rect key="frame" x="34" y="76" width="253" height="339"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25690132523362619" green="0.80950663343377127" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MyComms" image="first" id="7Io-BR-97d"/>
+                    <connections>
+                        <outlet property="buttonSMS" destination="x5v-m0-KPw" id="UWF-Wq-gPh"/>
+                        <outlet property="onCall" destination="nLq-Qi-DYv" id="9wi-0m-uuE"/>
+                        <outlet property="showEmail" destination="2Bd-44-uVE" id="jV6-Gj-1V4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AH-P3-isy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2422" y="-1555"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="ot8-2e-RuS">
+            <objects>
+                <viewController title="Second" id="QUy-BD-bpt" customClass="MyworldSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6D7-6d-ZfN"/>
+                        <viewControllerLayoutGuide type="bottom" id="A5o-7x-lpd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjT-g0-w6E">
+                                <rect key="frame" x="16" y="456" width="53" height="48"/>
+                                <state key="normal" image="WFargo2014.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="wellsLink:" destination="QUy-BD-bpt" eventType="touchUpInside" id="ouD-Na-0v7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYB-Od-ol5">
+                                <rect key="frame" x="95" y="456" width="55" height="46"/>
+                                <state key="normal" image="BOA_2014.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="boaLink:" destination="QUy-BD-bpt" eventType="touchUpInside" id="IpI-FG-UmZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXD-zl-yJb">
+                                <rect key="frame" x="252" y="454" width="59" height="46"/>
+                                <state key="normal" image="Star1_2014.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="starLink:" destination="QUy-BD-bpt" eventType="touchUpInside" id="uhq-Ds-Adv"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kI0-rW-0Fj">
+                                <rect key="frame" x="0.0" y="19" width="320" height="427"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9X-QW-use">
+                                <rect key="frame" x="174" y="456" width="57" height="44"/>
+                                <state key="normal" image="Fidelity_2014.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="techLink:" destination="QUy-BD-bpt" eventType="touchUpInside" id="qdj-xV-Tzo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49007409346131053" green="0.5133413669811282" blue="0.89535920516304346" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MyFinance" image="second" id="Z7h-1E-pvt"/>
+                    <connections>
+                        <outlet property="boaButton" destination="rYB-Od-ol5" id="KEM-6h-QXL"/>
+                        <outlet property="starButton" destination="NXD-zl-yJb" id="0F2-hn-fkb"/>
+                        <outlet property="techButton" destination="W9X-QW-use" id="HVw-5r-PJu"/>
+                        <outlet property="webviewLink" destination="kI0-rW-0Fj" id="38S-DE-RPm"/>
+                        <outlet property="wellsButton" destination="FjT-g0-w6E" id="0Zd-W4-N5N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1859" y="-1520"/>
+        </scene>
+        <!--MyPDFs-->
+        <scene sceneID="vde-kd-EPe">
+            <objects>
+                <viewController id="g1N-jE-7T0" customClass="MyworldFourthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e6l-Ae-xzk"/>
+                        <viewControllerLayoutGuide type="bottom" id="TMq-p6-oIE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="meo-bU-Y2f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCe-KV-NSq">
+                                <rect key="frame" x="0.0" y="20" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="g1N-jE-7T0" id="M3J-8B-JVX"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83948048274649523" green="0.86251163722858226" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MyPDFs" image="second" id="Y2V-hG-zHQ"/>
+                    <connections>
+                        <outlet property="webviewPDF" destination="SCe-KV-NSq" id="cze-6U-Wc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rn1-JI-YTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3182" y="-1047"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="sHc-so-liS" kind="relationship" relationship="viewControllers" id="ywp-yE-4Oc"/>
+                        <segue destination="g1N-jE-7T0" kind="relationship" relationship="viewControllers" id="FfU-GT-2J6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3501" y="-2440"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BOA_2014.png" width="80" height="80"/>
+        <image name="Email2014.png" width="64" height="64"/>
+        <image name="Fidelity_2014.png" width="80" height="80"/>
+        <image name="Star1_2014.png" width="80" height="80"/>
+        <image name="WFargo2014.png" width="80" height="80"/>
+        <image name="call2014.png" width="64" height="64"/>
+        <image name="first" width="30" height="30"/>
+        <image name="myWorld2.png" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+        <image name="sms-blue.png" width="790" height="800"/>
+        <image name="wMyWorld2014.png" width="300" height="224"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

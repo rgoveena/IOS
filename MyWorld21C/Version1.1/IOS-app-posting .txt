@@ -1,0 +1,44 @@
+Last Modified: 06/02/2015
+
+
+IOS Application Posting Process
+===============================
+
+https://itunesconnect.apple.com
+
+
+STEPS TO RESERVING YOUR APP NAME FOREVER
+========================================
+Log in to https://itunesconnect.apple.com
+Click Manage Your Apps
+Click Add New Application
+Complete the basic information, including the app name
+Upload temporary icons and screenshots (for iPhone 4 & iPhone 5)
+Change the app status to “Waiting for Upload”
+Create a very simple app and use the new bundle ID
+Submit the App to the App Store for Review (as you normally would)
+After the status has changed to “Waiting for Review” go into iTunes Connect
+Click Manage Your Apps > View Details > Binary Details
+Click Reject this Binary
+This will set the status of your application to “Developer Rejected”. Since you have successfully submitted a binary and had a “Waiting for Review” status it can sit in that status forever, therefore your app name is parked forever! Apple considers it a “real” app since it was officially submitted. So now sit on your great app name until you’re ready to finish development.
+
+
+
+
+App names: MyWorld21C , MyGlory - Generated 
+
+
+
+Next Steps: How to post IOS app into iTunes
+ 
+https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SubmittingYourApp/SubmittingYourApp.html
+
+https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SubmittingYourApp/SubmittingYourApp.html#//apple_ref/doc/uid/TP40012582-CH9-SW1
+
+
+
+
+
+
+
+
